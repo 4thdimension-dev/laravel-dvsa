@@ -2,9 +2,9 @@
 
 namespace FourthDimension\Dvsa;
 
+use FourthDimension\Dvsa\Commands\DvsaCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use FourthDimension\Dvsa\Commands\DvsaCommand;
 
 class DvsaServiceProvider extends PackageServiceProvider
 {

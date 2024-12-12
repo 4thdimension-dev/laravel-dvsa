@@ -2,9 +2,9 @@
 
 namespace FourthDimension\Dvsa\Tests;
 
+use FourthDimension\Dvsa\DvsaServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use FourthDimension\Dvsa\DvsaServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn(string $modelName) => 'FourthDimension\\Dvsa\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'FourthDimension\\Dvsa\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
