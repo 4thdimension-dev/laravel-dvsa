@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace FourthDimension\Dvsa;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use FourthDimension\Dvsa\Commands\DvsaCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class DvsaServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-dvsa')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel_dvsa_table')
+            ->hasCommand(DvsaCommand::class);
     }
 }

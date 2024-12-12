@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace FourthDimension\Dvsa\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DvsaCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-dvsa';
 
     public $description = 'My command';
 

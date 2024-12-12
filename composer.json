@@ -1,22 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "4thdimension-dev/laravel-dvsa",
+    "description": "Laravel package for interacting with UK DVSA API",
     "keywords": [
-        ":vendor_name",
+        "4thdimension-dev",
         "laravel",
-        ":package_slug"
+        "laravel-dvsa"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/4thdimension-dev/laravel-dvsa",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "4th Dimension Dev Team",
+            "email": "web.development@4th-d.co.uk",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.3",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "FourthDimension\\Dvsa\\": "src/",
+            "FourthDimension\\Dvsa\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "FourthDimension\\Dvsa\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "FourthDimension\\Dvsa\\DvsaServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Dvsa": "FourthDimension\\Dvsa\\Facades\\Dvsa"
             }
         }
     },
