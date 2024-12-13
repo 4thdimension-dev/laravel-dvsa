@@ -2,24 +2,17 @@
 
 namespace FourthDimension\Dvsa;
 
+use FourthDimension\Dvsa\Commands\DvsaCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use FourthDimension\Dvsa\Commands\DvsaCommand;
 
 class DvsaServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('laravel-dvsa')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_dvsa_table')
-            ->hasCommand(DvsaCommand::class);
+            ->hasConfigFile();
+        // ->hasCommand(DvsaCommand::class);
     }
 }

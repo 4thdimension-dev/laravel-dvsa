@@ -1,4 +1,7 @@
 <?php
 
-// config for FourthDimension/Dvsa
-return [];
+return [
+    'host' => 'https://beta.check-mot.service.gov.uk',
+
+    'key' => env('DVSA_API_KEY'),
+];

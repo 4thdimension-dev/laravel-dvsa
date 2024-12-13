@@ -28,4 +28,8 @@
             <directory suffix=".php">./src</directory>
         </include>
     </source>
+      <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="DVSA_API_KEY" value="l8Ve8zvLQl3IEA4OEKnu5qke8kTXZxS8lV6vkpi9"/>
+    </php>
 </phpunit>
