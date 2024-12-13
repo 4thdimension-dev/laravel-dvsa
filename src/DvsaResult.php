@@ -28,7 +28,6 @@ class DvsaResult
 
     public Carbon $registration_date;
 
-
     public Collection $tests;
 
     public function __construct(array $rawData)

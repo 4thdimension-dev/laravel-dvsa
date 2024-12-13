@@ -91,7 +91,6 @@ function jsonResponse(): string
     }]';
 }
 
-
 function jsonResponse2(): string
 {
     return '[{
@@ -176,7 +175,6 @@ function jsonResponse2(): string
 }
 
 beforeEach(function () {});
-
 
 it('can call DVSA API and return result', function () {
     $registration = 'ZZ99ABC';
